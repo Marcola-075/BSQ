@@ -53,15 +53,21 @@ int errors(char *str)
     return (0);
 }
 
-void BSQ(char *str)
+int BSQ(char *str)
 {
     int i = 1;
+    char *dest = put_in_char(str);
     char **tab = load_file_in_mem(str);
 
-    while (tab[i] != NULL) {
-        printf("%s\n", tab[i]);
-        i = i + 1;
+    if (check_o(dest) == 0) {
+        while (tab[i] != NULL) {
+            my_putstr(tab[i]);
+            i = i + 1;
+        }
+        return (0);
     }
+    if (check_pt(dest) == 0)
+        put_pt_x(check_len(dest), my_strlen(tab[1]) - 1, tab, dest);
 }
 
 int main(int ac, char **av)

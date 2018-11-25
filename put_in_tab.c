@@ -31,7 +31,7 @@ char **put_in_tab(char *str)
 
     tab[y] = malloc(sizeof(char) * size);
     while (str[i] != '\0') {
-        if (str[i] == '\n') {
+        if (str[i - 1] == '\n') {
             tab[y][z] = '\0';
             y = y + 1;
             tab[y] = malloc(sizeof(char) * size);
@@ -41,6 +41,8 @@ char **put_in_tab(char *str)
         i = i + 1;
         z = z + 1;
     }
+    tab[y][z] = '\n';
+    tab[y][z + 1] = '\0';
     tab[y + 1] = NULL;
     return (tab);
 }

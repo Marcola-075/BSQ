@@ -7,7 +7,8 @@
 
 SRC	=	check_errors.c		\
 		load_file_in_mem.c	\
-		put_in_tab.c
+		put_in_tab.c		\
+		check_spe.c
 
 OBJ	=	$(SRC:.c=.o)
 
