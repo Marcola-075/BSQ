@@ -5,7 +5,6 @@
 ** check_spe
 */
 
-#include <stddef.h>
 #include "my.h"
 
 int check_o(char *str)

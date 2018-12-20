@@ -5,10 +5,12 @@
 ## CPD10ysk01
 ##
 
-SRC	=	check_errors.c		\
-		load_file_in_mem.c	\
-		put_in_tab.c		\
-		check_spe.c
+SRC	=	BSQ_one.c	\
+		BSQ_two.c	\
+		check_errors.c	\
+		check_spe.c	\
+		main.c		\
+		put_in_tab.c
 
 OBJ	=	$(SRC:.c=.o)
 
