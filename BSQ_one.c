@@ -11,7 +11,7 @@ void disp_tab(char **tab)
 {
     int y = 1;
 
-    while (tab[y] != NULL) {
+    while (tab[y + 1] != NULL) {
         my_putstr(tab[y]);
         y = y + 1;
     }
@@ -41,8 +41,8 @@ int check_sqr(char **tab, int s_x, int s_y, int size)
 {
     int x = s_x;
 
-    while (tab[s_y][s_x] != '\0' && s_x < x + size) {
-        if (tab[s_y][s_x] != '.')
+    while (s_x < x + size) {
+        if (tab[s_y] == NULL || tab[s_y][s_x] != '.')
             return (1);
         s_x = s_x + 1;
     }

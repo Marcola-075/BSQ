@@ -16,7 +16,7 @@ OBJ	=	$(SRC:.c=.o)
 
 NAME	=	bsq
 
-CFLAGS	=	-I ./include
+CFLAGS	=	-I ./include -g
 
 LIB 	=	-L ./lib/ -lmy
 

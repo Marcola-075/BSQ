@@ -33,8 +33,7 @@ int len_line(char *str, int i, char sep)
 
 char **end_tab(char **tab, int y, int z)
 {
-    tab[y][z] = '\n';
-    tab[y][z + 1] = '\0';
+    tab[y][z] = '\0';
     tab[y + 1] = NULL;
     return (tab);
 }
