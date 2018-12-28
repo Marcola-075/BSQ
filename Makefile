@@ -5,8 +5,8 @@
 ## CPD10ysk01
 ##
 
-SRC	=	BSQ_one.c	\
-		BSQ_two.c	\
+SRC	=	bsq_one.c	\
+		bsq_two.c	\
 		check_errors.c	\
 		check_spe.c	\
 		main.c		\
